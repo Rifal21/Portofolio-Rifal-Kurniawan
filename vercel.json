@@ -7,8 +7,5 @@
       "config": { "distDir": "build" }
     }
   ],
-  "routes": [{ "src": "/(.*)", "dest": "/" }],
-  "engines": {
-    "node": "16.x"
-  }
+  "routes": [{ "src": "/(.*)", "dest": "/" }]
 }
