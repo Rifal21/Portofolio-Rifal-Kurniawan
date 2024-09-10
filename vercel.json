@@ -7,5 +7,11 @@
       "config": { "distDir": "build" }
     }
   ],
-  "routes": [{ "src": "/(.*)", "dest": "/" }]
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/build/$1",
+      "headers": { "Cache-Control": "s-maxage=0" }
+    }
+  ]
 }
